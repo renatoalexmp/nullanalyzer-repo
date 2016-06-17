@@ -37,7 +37,7 @@ public class NullPointerAnalysisMain {
 
 	private static String NAT_TRANSFORMER_PACK = "jtp.nat";
 
-	private static int TEST_CASE = 9;
+	private static int TEST_CASE = 21;
 
 	private static NullAnalyzerWin graphWindow = new NullAnalyzerWin();
 
@@ -160,7 +160,7 @@ public class NullPointerAnalysisMain {
 				
 				if (!Arrays.asList(argv).contains("--cp")) {
 					// Just appending basic java library classpath
-					String customClassPath = ";"+jarLocation+"/nullanalyzer.jar;${JAVA_HOME}/lib/rt.jar;${JAVA_HOME}/lib/jce.jar";
+					String customClassPath = ";"+jarLocation+"/nullanalyzer-repo.jar;${JAVA_HOME}/lib/rt.jar;${JAVA_HOME}/lib/jce.jar";
 					Options.v().set_soot_classpath(customClassPath);
 				}
 
@@ -286,7 +286,7 @@ public class NullPointerAnalysisMain {
 
 	private static String wrongClassPath = "";
 
-	private static String alternativeClassPath = "D:/AmbientePessoal/workspaceDCC888/nullanalyzer/src/main/java;"
+	private static String alternativeClassPath = "D:/Users/p061917/git/nullanalyzer-repo/src/main/java;" 
 			+ "C:/Prodemge/maven/.m2/repository/br/gov/prodemge/ssc/admin/ssc-admin-comum/3.0.39/ssc-admin-comum-3.0.39.jar;"
 			+ "C:/Prodemge/maven/.m2/repository/br/gov/prodemge/ssc/admin/ssc-admin-dominio/3.0.39/ssc-admin-dominio-3.0.39.jar;"
 			+ "C:/Prodemge/maven/.m2/repository/br/gov/prodemge/ssc/admin/ssc-admin-infraestrutura/3.0.39/ssc-admin-infraestrutura-3.0.39.jar;"
